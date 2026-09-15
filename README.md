@@ -1,39 +1,15 @@
-# 🎭 Whimsical Joke Generator
+# Whimsical Joke Generator
 
-A silly, vibrant single-page web app built to spread smiles through quick jokes, custom typography, and dynamic animations. 
+I built a simple single page web app that gives you silly jokes at the click of a button. It features a "Whimsical" mode with dynamic background color changes and a "Less Whimsical" mode for quick jokes.
 
-Built for the **Hack Club Stardance Challenge** ⭐️
+## How I Built It
+* **HTML/CSS:** Set up the basic layout and styled everything using Google's Fredoka font.
+* **JavaScript:** Wrote functions to toggle between joke types and trigger background color switches.
+* **Animations:** Added floating emoji pop animations whenever a joke generates.
 
----
+## AI Usage
+I used AI as an assistant to fix code syntax errors and help debug the logic for the floating emoji animation function. 
 
-## ✨ Features
-
-* **Dual-Mode Joke Toggling:** Choose between goofy, whimsical jokes or plain, straight-to-the-point ones.[both are identical, one has more flare]
-* **Emoji Pop Animations:** Interactive floating emoji effects that pop up across the screen whenever a new joke is generated.
-* **Custom Typography & Design:** Styled with Google's *Fredoka* font, custom buttons, and dynamic color changes.
-* **Lightweight & Fast:** Pure front-end code with zero external dependencies or heavy frameworks.
-
----
-
-## 🛠️ Tech Stack
-
-* **HTML5:** Semantic app structure and layout.
-* **CSS3:** Custom keyframe animations, layout styling, and Fredoka font integration.
-* **JavaScript (Vanilla):** DOM manipulation, state toggling, and dynamic element creation for animations.
-* **GitHub Pages:** Live hosting and deployment.
-
----
-
-## 🤖 AI & Transparency Disclosure
-
-In keeping with Hack Club's honesty guidelines:
-* **Debugging:** AI was used to trace error logs, debug syntax issues, and clean up broken code blocks during development.
-* **Animation Assistance:** AI was used to help structure and logic-check the floating emoji pop animation function.
-* **Core Building:** All UI design decisions, HTML layout, joke selection, and overall project assembly were directed and built manually.
-
----
-
-## 🚀 Live Links
-
-* **Live Demo:** [Whimsical Joke Generator] https://shabett.github.io/whimsical-joke-generator/
+## Live Demo
+Check out the live page here: https://shabett.github.io/whimsical-joke-generator/
 * **Repository:** [GitHub Code] https://github.com/Shabett/whimsical-joke-generator/
