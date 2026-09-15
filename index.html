@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whimsical Joke Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      font-family: 'Fredoka', cursive; 
+      text-align: center; 
+      background-color: #CBC3E3; 
+      color: #333;
+      padding-top: 50px; 
+      transition: background-color 0.4s ease;
+    }
+    .btn-whimsical { 
+      background-color: #6A5ACD; 
+      color: white; 
+      border: none; 
+      padding: 10px 20px; 
+      font-size: 16px; 
+      cursor: pointer; 
+      border-radius: 5px; 
+      margin: 5px;
+    }
+    .btn-plain {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    @keyframes floatAndFade {
+      0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100px) scale(1.5);
+      }
+    }
+    .emoji-pop {
+      position: absolute;
+      font-size: 24px;
+      pointer-events: none;
+      animation: floatAndFade 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body>
+  <h1>Whimsical Joke Generator✨</h1>
+  <button class="btn-whimsical" onclick="getWhimsyJoke()">Tell me a Whimsical Joke!</button>
+  <button class="btn-plain" onclick="getLessWhimsyJoke()">Tell me a Less Whimsical Joke</button>
+  <p id="joke">Your joke will appear here!</p>
+
+  <script>
+    function getWhimsyJoke() {
+      document.body.style.backgroundColor = "#CBC3E3";
+      const jokes = [
+        "What do you call a magic dog? A labracadabrador.",
+        "How do you make a tissue dance? Put a little boogie in it.",
+        "Why do mushrooms need so much room? Because they need mush-room",
+        "What do you call a bear with no teeth? A gummy bear",
+        "Why did the math book look sad? Because it had too many problems!"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      document.getElementById("joke").innerText = jokes[randomIndex];
+
+      spawnEmoji();
+      spawnEmoji();
+      spawnEmoji();
+    }
+
+    function getLessWhimsyJoke() {
+      document.body.style.backgroundColor = "#81c784";
+      const plainJokes = [
+        "Knock knock. Who's there? A lame joke.",
+        "What did six say to seven? SIX SEVEN!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field.",
+        "Why don't scientists trust atoms? Because they make up everything.",
+        "Why did the bicycle fall over? Because it was two-tired.",
+        "What do you call fake spaghetti? An impasta.",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one."
+      ];
+
+      const randomIndex = Math.floor(Math.random() * plainJokes.length);
+      document.getElementById("joke").innerText = plainJokes[randomIndex];
+    }
+
+    function spawnEmoji() {
+      const emojis = ["✨", "🦄", "🌈", "🎉", "🎈", "🎭", "⭐"];
+      const emoji = document.createElement("span");
+      emoji.className = "emoji-pop";
+      emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+
+      const x = window.innerWidth / 2 + (Math.random() * 260 - 130);
+      const y = window.innerHeight / 2 + (Math.random() * 100 - 50);
+
+      emoji.style.left = `${x}px`;
+      emoji.style.top = `${y}px`;
+
+      document.body.appendChild(emoji);
+
+      setTimeout(() => emoji.remove(), 1000);
+    }
+  </script>
+</body>
+</html>
