@@ -8,7 +8,7 @@ Built for the **Hack Club Stardance Challenge** ⭐️
 
 ## ✨ Features
 
-* **Dual-Mode Joke Toggling:** Choose between goofy, whimsical jokes or plain, straight-to-the-point ones.
+* **Dual-Mode Joke Toggling:** Choose between goofy, whimsical jokes or plain, straight-to-the-point ones.[both are identical, one has more flare]
 * **Emoji Pop Animations:** Interactive floating emoji effects that pop up across the screen whenever a new joke is generated.
 * **Custom Typography & Design:** Styled with Google's *Fredoka* font, custom buttons, and dynamic color changes.
 * **Lightweight & Fast:** Pure front-end code with zero external dependencies or heavy frameworks.
