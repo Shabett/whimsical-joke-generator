@@ -13,3 +13,13 @@ I used AI as an assistant to fix code syntax errors and help debug the logic for
 ## Live Demo
 Check out the live page here: https://shabett.github.io/whimsical-joke-generator/
 * **Repository:** [GitHub Code] https://github.com/Shabett/whimsical-joke-generator/
+
+## What's New in v2.0  
+v2.0 NOW comes with live jokeAPI integration moving away from the limited joke options in v1.
+Jokes are now themed after coding, with unlimited jokes.
+New hamburger menu was added for configuration and settings, you can now:
+1. Change the Themes
+2. Shift to mobile view for mobile users
+3. access your liked jokes with options to copy them to clip-board and delete them.
+
+You can now like your favourite jokes. 
